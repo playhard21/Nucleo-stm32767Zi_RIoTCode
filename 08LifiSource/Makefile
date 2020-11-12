@@ -3,6 +3,7 @@ APPLICATION = LifiSink
 
 # If no BOARD is found in the environment, use this default:
 BOARD ?= nucleo-f767zi
+#BOARD ?= nucleo-f401re
 
 # This has to be the absolute path to the RIOT base directory:
 RIOTBASE ?= $(CURDIR)/../RIOT
@@ -25,7 +26,7 @@ USEMODULE += saul_default
 USEMODULE += printf_float
 USEMODULE += xtimer
 #features
-FEATURES_REQUIRED += periph_adc
+
 FEATURES_REQUIRED += periph_gpio
 FEATURES_REQUIRED += periph_gpio_irq
 FEATURES_REQUIRED += cpp
